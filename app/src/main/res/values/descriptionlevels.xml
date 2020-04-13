@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="levelone">Choose a number that is larger.\nQuestions can be repeated until you score 20 points.</string>
+    <string name="leveloneEnd">"Congratulations, the level is passed!\n
+        Did you know that the number 7 is considered the happiest number. There are 7 days in a week, 7 continents, 7 colors of the rainbow, 7 musical notes, 7 days of Creation and much more.
+         Also, the number 7 is most often the favorite number of people around the world."</string>
+
+    <string name="leveltwo">Choose a Roman numeral that is larger.\nQuestions can be repeated until you score 20 points.</string>
+    <string name="leveltwoEnd">"Congratulations, the level is passed!\n
+        Did you know that in Roman numerals there is no digit 0."</string>
+
+    <string name="levelthree">Which of the animals shows the tongue more. Questions can be repeated until you score 20 points.</string>
+    <string name="levelthreeEnd">"Congratulations, the level is passed!\n
+        Did you know that a woodpecker, when it hits with a beak, draws its tongue in and wraps its brain around it to protect it."</string>
+
+    <string name="levelfour">Choose something edible.\nQuestions can be repeated until you score 20 points.</string>
+    <string name="levelfourEnd">"Congratulations, the level is passed!\n
+        It is known that many crocodiles swallow stones. But not because for them they are edible. Stones help them plunge into water faster and stay at the bottom."</string>
+</resources>

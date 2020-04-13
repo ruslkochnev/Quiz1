@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Викторина</string>
+    <string name="start">Начать</string>
+    <string name="back">Назад</string>
+    <string name="level">Уровень:</string>
+    <string name="level1">Уровень 1</string>
+    <string name="level2">Уровень: 2</string>
+    <string name="level3">Уровень: 3</string>
+    <string name="level4">Уровень: 4</string>
+    <string name="textcontinue">Продолжить</string>
+    <string name="x">X</string>
+    <string name="_1">1</string>
+    <string name="toastMsgExit">Нажмите ещё раз, чтобы выйти</string>
+    <string name="toastMsgNotPassed">Пройдите предыдущий уровень, чтобы открыть</string>
+    <string name="textAd">Эта реклама помогает нам поддерживать нашу игру</string>
+    <string name="buttonSkip">Пропустить</string>
+    <string name="appSupport">Поддержать проект</string>
+    <string name="level_not_available">"Уровень пока не доступен. "</string>
+    <string name="sup1">50 &#8381;</string>
+    <string name="sup2">100 &#8381;</string>
+    <string name="sup3">500 &#8381;</string>
+</resources>

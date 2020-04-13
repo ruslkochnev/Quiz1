@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="start">Start</string>
+    <string name="back">Back</string>
+    <string name="level">Level:</string>
+    <string name="level1">Level: 1</string>
+    <string name="level2">Level: 2</string>
+    <string name="level3">Level: 3</string>
+    <string name="level4">Level: 4</string>
+    <string name="textcontinue">Continue</string>
+    <string name="x">X</string>
+    <string name="_1">1</string>
+    <string name="toastMsgExit">Click again to exit</string>
+    <string name="toastMsgNotPassed">Complete the previous level to open</string>
+    <string name="textAd">This AD helps us support our game</string>
+    <string name="buttonSkip">Skip</string>
+    <string name="app_id" translatable="false">ca-app-pub-6978053805119593~6299668246</string>
+    <string name="ad_id" translatable="false">ca-app-pub-6978053805119593/4960334717</string>
+    <string name="appSupport">Support the project</string>
+    <string name="level_not_available">Level is not available yet. Coming soon!</string>
+    <string name="license" translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn6XFNwuhwLWIbHNN31DQroVYP+MazE97w/WH6ZO0qPrKCBhymViEoVgHsdITCJHimrP2tsPBBB7GgCpJIxigZhze35aRwxQZLI0uI83d9RK5lear2bvNSjlK2lfudP3Hq/C8cA8fQc8g3/hJWxdZ15jSMkfmf7yNr91cWl1v1bp4sdQFjJ+byEyGtRdAEoKcT7kRyRF+ULyWRp7Z+1VCUloVZj/Bu7a+9m2/EgN8513zLUCTfOjVJgG+1+uUP0WmTomfqLUilNnYyhIk7Bk1zmH3TtPIfiLRiI1Fdvk5EaVwzHt50X06ZFzquZ2w+m69LGiBiA+se9T0htMLT+ZY4QIDAQAB</string>
+    <string name="sup1">0.99 $</string>
+    <string name="sup2">1.49 $</string>
+    <string name="sup3">6.99 $</string>
+</resources>
