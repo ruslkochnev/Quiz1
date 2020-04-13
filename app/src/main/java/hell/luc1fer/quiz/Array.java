@@ -17,7 +17,6 @@ public class Array {
     };
 
 
-
     final int[] texts1 = {
             R.string.lvl1text0,
             R.string.lvl1text1,
@@ -31,7 +30,7 @@ public class Array {
             R.string.lvl1text9,
     };
 
-    final int[] strong1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, };
+    final int[] strong1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
 
 
     //массив для 2 уровня
@@ -49,10 +48,6 @@ public class Array {
     };
 
 
-
-
-
-
     final int[] texts2 = {
             R.string.lvl2text1,
             R.string.lvl2text2,
@@ -67,8 +62,7 @@ public class Array {
     };
 
 
-    final int[] strong2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, };
-
+    final int[] strong2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,};
 
 
     //массив для 3 уровня
@@ -122,7 +116,7 @@ public class Array {
 
     };
 
-    final int[] strong3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, };
+    final int[] strong3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,};
 
 
     //массив для 4 уровня
@@ -174,7 +168,7 @@ public class Array {
 
     };
 
-    final int[] strong4 = {1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,};
+    final int[] strong4 = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0,};
 
     final int[] images_levels = {
             R.drawable.three_level1,

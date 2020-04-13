@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.TransactionDetails;
 
@@ -29,6 +30,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
     Array array = new Array();
     int level = 0;
     BillingProcessor bp;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +49,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                     mServ.pauseMusic();
                 }
             }
+
             @Override
             public void onHomeLongPressed() {
                 if (mServ != null) {
@@ -58,7 +61,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
 
         //in-app purchase
 
-        if(!BillingProcessor.isIabServiceAvailable(this)) {
+        if (!BillingProcessor.isIabServiceAvailable(this)) {
             Toast.makeText(this, "In-app billing service is unavailable.", Toast.LENGTH_LONG).show();
         }
 
@@ -86,9 +89,6 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         });
 
 
-
-
-
         for (int i = 1; i < level; i++) {
             TextView tv = findViewById(array.x[i]);
             tv.setText("" + (i + 1));
@@ -97,8 +97,6 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
 
 
     }
-
-
 
 
     public void onClick(View v) {
@@ -227,7 +225,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                 } catch (Exception e) {
                 }
                 break;
-           case R.id.textView5://5 уровень
+            case R.id.textView5://5 уровень
                 notAvailable = Toast.makeText(getBaseContext(), R.string.level_not_available, Toast.LENGTH_SHORT);
                 notAvailable.show();
                 break;
@@ -338,11 +336,11 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
 
     private boolean mIsBound = false;
     private MusicService mServ;
-    private ServiceConnection Scon =new ServiceConnection(){
+    private ServiceConnection Scon = new ServiceConnection() {
 
         public void onServiceConnected(ComponentName name, IBinder
                 binder) {
-            mServ = ((MusicService.ServiceBinder)binder).getService();
+            mServ = ((MusicService.ServiceBinder) binder).getService();
         }
 
         public void onServiceDisconnected(ComponentName name) {
@@ -350,16 +348,14 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         }
     };
 
-    void doBindService(){
-        bindService(new Intent(this,MusicService.class),
+    void doBindService() {
+        bindService(new Intent(this, MusicService.class),
                 Scon, Context.BIND_AUTO_CREATE);
         mIsBound = true;
     }
 
-    void doUnbindService()
-    {
-        if(mIsBound)
-        {
+    void doUnbindService() {
+        if (mIsBound) {
             unbindService(Scon);
             mIsBound = false;
         }
@@ -375,13 +371,14 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         }
 
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
         doUnbindService();
         Intent music = new Intent();
-        music.setClass(this,MusicService.class);
+        music.setClass(this, MusicService.class);
         stopService(music);
 
     }
@@ -404,7 +401,6 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         }
 
 
-
     }
 
     //перепрограмируем софт-кнопку "назад"
@@ -421,7 +417,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
     @Override
     public void onProductPurchased(String productId, TransactionDetails details) {
 
-        Toast.makeText(this, "Thanks for Your donate. "+productId, Toast.LENGTH_LONG).show(); // Благодарим за пожертвование
+        Toast.makeText(this, "Thanks for Your donate. " + productId, Toast.LENGTH_LONG).show(); // Благодарим за пожертвование
         bp.consumePurchase(productId); // И сразу после успешного завершения покупки сразу реализуем приобретённый товар, чтобы его можно было купить снова.
 
     }
@@ -434,7 +430,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
     @Override
     public void onBillingError(int errorCode, Throwable error) {
 
-        Log.d("LOG", "On Billing Error"+Integer.toString(errorCode)); // Пишем ошибку в лог
+        Log.d("LOG", "On Billing Error" + Integer.toString(errorCode)); // Пишем ошибку в лог
 
     }
 
