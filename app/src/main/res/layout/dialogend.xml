@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/previewbackgroundone"
+    android:background="@drawable/level1_previewbackgroundone"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button_stroke_black95_press_white"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/textcontinue"

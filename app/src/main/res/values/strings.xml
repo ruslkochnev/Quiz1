@@ -22,4 +22,5 @@
     <string name="sup1">0.99 $</string>
     <string name="sup2">1.49 $</string>
     <string name="sup3">6.99 $</string>
+    <string name="countdown">"Left: "</string>
 </resources>

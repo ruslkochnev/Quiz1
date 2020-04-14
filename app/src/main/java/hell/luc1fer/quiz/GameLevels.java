@@ -92,7 +92,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         for (int i = 1; i < level; i++) {
             TextView tv = findViewById(array.x[i]);
             tv.setText("" + (i + 1));
-            tv.setBackgroundResource(R.drawable.button_gamelevels);
+            tv.setBackgroundResource(R.drawable.stl_button_gamelevels);
         }
 
 
@@ -114,13 +114,13 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                 Intent level1 = new Intent(GameLevels.this, Levels.class);
                 level1.putExtra("text_levels", getString(R.string.level1)); //задаем название уровня и создаем ключ "text_levels"
                 level1.putExtra("text_color", getColor(R.color.white));//задаем цвет текста и создаем ключ "text_color"
-                level1.putExtra("background", R.drawable.level1);//задаем фон уровня и создаем ключ "background"
-                level1.putExtra("previewImg", R.drawable.previewimgone);//задаем картинку диалогового окна и создаем ключ "previewImg"
-                level1.putExtra("dialogFon", R.drawable.previewbackgroundone);//задаем фон диалогового окна и создаем ключ "dialogFon"
+                level1.putExtra("background", R.drawable.level1_level1);//задаем фон уровня и создаем ключ "background"
+                level1.putExtra("previewImg", R.drawable.level1_previewimgone);//задаем картинку диалогового окна и создаем ключ "previewImg"
+                level1.putExtra("dialogFon", R.drawable.level1_previewbackgroundone);//задаем фон диалогового окна и создаем ключ "dialogFon"
                 level1.putExtra("levelDescription", getString(R.string.levelone));//задаем описание уровня и создаем ключ "levelDescription"
-                level1.putExtra("dialogFonEnd", R.drawable.previewbackgroundone);//задаем фон даилогового окна в конце уровня и создаем ключ "dialogFonEnd"
+                level1.putExtra("dialogFonEnd", R.drawable.level1_previewbackgroundone);//задаем фон даилогового окна в конце уровня и создаем ключ "dialogFonEnd"
                 level1.putExtra("levelDescriptionEnd", getString(R.string.leveloneEnd));//задаем текст диалогового окна в конце уровня и создаем ключ "levelDescriptionEnd"
-                level1.putExtra("btn_back_style", R.drawable.button_stroke_white_press_blue);//задаем стиль кнопки "назад" и создаем ключ "btn_back_style"
+                level1.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);//задаем стиль кнопки "назад" и создаем ключ "btn_back_style"
                 level1.putExtra("btn_back_text_color", getColor(R.color.white));//задаем цвет текста кнопки "назад" и создаем ключ "btn_back_text_color"
                 level1.putExtra("arrayElementsCount", 10);//задаем размер массива и создаем ключ "arrayElementsCount"
                 level1.putExtra("img", array.images1);//задаем массив картинок и создаем ключ "img"
@@ -138,13 +138,13 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level2 = new Intent(GameLevels.this, Levels.class);
                         level2.putExtra("text_levels", getString(R.string.level2));
                         level2.putExtra("text_color", getColor(R.color.white));
-                        level2.putExtra("background", R.drawable.level1);
-                        level2.putExtra("previewImg", R.drawable.previewimgtwo);
-                        level2.putExtra("dialogFon", R.drawable.previewbackgroundone);
+                        level2.putExtra("background", R.drawable.level2_level2);
+                        level2.putExtra("previewImg", R.drawable.level2_previewimgtwo);
+                        level2.putExtra("dialogFon", R.drawable.level2_previewbackgroundtwo);
                         level2.putExtra("levelDescription", getString(R.string.leveltwo));
-                        level2.putExtra("dialogFonEnd", R.drawable.previewbackgroundone);
+                        level2.putExtra("dialogFonEnd", R.drawable.level2_previewbackgroundtwo);
                         level2.putExtra("levelDescriptionEnd", getString(R.string.leveltwoEnd));
-                        level2.putExtra("btn_back_style", R.drawable.button_stroke_white_press_blue);
+                        level2.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);
                         level2.putExtra("btn_back_text_color", getColor(R.color.white));
                         level2.putExtra("arrayElementsCount", 10);
                         level2.putExtra("img", array.images2);
@@ -168,13 +168,13 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level3 = new Intent(GameLevels.this, Levels.class);
                         level3.putExtra("text_levels", getString(R.string.level3));
                         level3.putExtra("text_color", getColor(R.color.black95));
-                        level3.putExtra("background", R.drawable.level3);
-                        level3.putExtra("previewImg", R.drawable.previewimg3);
-                        level3.putExtra("dialogFon", R.drawable.previewbackground3);
+                        level3.putExtra("background", R.drawable.level3_level3);
+                        level3.putExtra("previewImg", R.drawable.level3_previewimg3);
+                        level3.putExtra("dialogFon", R.drawable.level3_previewbackground3);
                         level3.putExtra("levelDescription", getString(R.string.levelthree));
-                        level3.putExtra("dialogFonEnd", R.drawable.previewbackground3);
+                        level3.putExtra("dialogFonEnd", R.drawable.level3_previewbackground3);
                         level3.putExtra("levelDescriptionEnd", getString(R.string.levelthreeEnd));
-                        level3.putExtra("btn_back_style", R.drawable.button_stroke_black95_press_white);
+                        level3.putExtra("btn_back_style", R.drawable.stl_button_stroke_black95_press_white);
                         level3.putExtra("btn_back_text_color", getColor(R.color.black95));
                         level3.putExtra("arrayElementsCount", 21);
                         level3.putExtra("img", array.images3);
@@ -199,13 +199,13 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level4 = new Intent(GameLevels.this, Levels.class);
                         level4.putExtra("text_levels", getString(R.string.level4));
                         level4.putExtra("text_color", getColor(R.color.white));
-                        level4.putExtra("background", R.drawable.level4);
-                        level4.putExtra("previewImg", R.drawable.previewimg4);
-                        level4.putExtra("dialogFon", R.drawable.previewbackground4);
+                        level4.putExtra("background", R.drawable.level4_level4);
+                        level4.putExtra("previewImg", R.drawable.level4_previewimg4);
+                        level4.putExtra("dialogFon", R.drawable.level4_previewbackground4);
                         level4.putExtra("levelDescription", getString(R.string.levelfour));
-                        level4.putExtra("dialogFonEnd", R.drawable.previewbackground4);
+                        level4.putExtra("dialogFonEnd", R.drawable.level4_previewbackground4);
                         level4.putExtra("levelDescriptionEnd", getString(R.string.levelfourEnd));
-                        level4.putExtra("btn_back_style", R.drawable.button_stroke_white_press_blue);
+                        level4.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);
                         level4.putExtra("btn_back_text_color", getColor(R.color.white));
                         level4.putExtra("arrayElementsCount", 10);
                         level4.putExtra("img", array.images4);

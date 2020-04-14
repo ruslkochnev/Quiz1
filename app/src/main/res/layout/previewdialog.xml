@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/previewbackgroundone"
+    android:background="@drawable/level1_previewbackgroundone"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 
@@ -21,7 +21,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="start"
-            android:background="@drawable/button_stroke_black95_press_white"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
             android:gravity="center"
             android:text="&#60;"
             android:textStyle="bold" />
@@ -32,7 +32,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_weight="60"
-            android:src="@drawable/previewimgone" />
+            android:src="@drawable/level1_previewimgone" />
 
         <TextView
             android:id="@+id/textdescription"
@@ -50,7 +50,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             android:layout_weight="10"
-            android:background="@drawable/button_stroke_black95_press_white"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/textcontinue"

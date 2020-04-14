@@ -3,5 +3,5 @@
     <item
         android:drawable="@drawable/style_btn_black95"
         android:state_pressed="false" />
-    <item android:drawable="@drawable/lock" />
+    <item android:drawable="@drawable/level0_lock" />
 </layer-list>

@@ -7,11 +7,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.view.MotionEvent;
@@ -31,7 +30,7 @@ import java.util.Random;
 
 public class Levels extends AppCompatActivity {
     HomeWatcher mHomeWatcher;
-
+    private TextView mTimer;
     Dialog dialog;
     Dialog dialogEnd;
     public int numLeft;
@@ -46,6 +45,50 @@ public class Levels extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+
+
+
+
+
+
+
+
+
+
+        mTimer = findViewById(R.id.countdown);
+
+        //Создаем таймер обратного отсчета на 20 секунд с шагом отсчета
+        //в 1 секунду (задаем значения в миллисекундах):
+        new CountDownTimer(10000, 1000) {
+
+            //Здесь обновляем текст счетчика обратного отсчета с каждой секундой
+            public void onTick(long millisUntilFinished) {
+                mTimer.setText(getString(R.string.countdown) +
+                        + millisUntilFinished / 1000);
+            }
+            //Задаем действия после завершения отсчета (высвечиваем надпись "Бабах!"):
+            public void onFinish() {
+                try {
+
+                } catch (Exception e) {
+                }
+            }
+        }
+                .start();
+
+
+
+
+
+
+
+
+
+
+
+
+
         doBindService();
 
         Intent music = new Intent();
@@ -230,9 +273,9 @@ public class Levels extends AppCompatActivity {
                     //коснулся
                     img_right.setEnabled(false); //блокируем от нажатия вторую картинку
                     if (l[numLeft] > l[numRight]) {
-                        img_left.setImageResource(R.drawable.img_true);
+                        img_left.setImageResource(R.drawable.level0_img_true);
                     } else {
-                        img_left.setImageResource(R.drawable.img_false);
+                        img_left.setImageResource(R.drawable.level0_img_false);
                     }
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     //отпустил
@@ -324,9 +367,9 @@ public class Levels extends AppCompatActivity {
                     //коснулся
                     img_left.setEnabled(false); //блокируем от нажатия вторую картинку
                     if (l[numLeft] < l[numRight]) {
-                        img_right.setImageResource(R.drawable.img_true);
+                        img_right.setImageResource(R.drawable.level0_img_true);
                     } else {
-                        img_right.setImageResource(R.drawable.img_false);
+                        img_right.setImageResource(R.drawable.level0_img_false);
                     }
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     //отпустил

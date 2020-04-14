@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/level1" />
+        android:src="@drawable/level1_level1" />
 
     <LinearLayout
         android:id="@+id/container1"
@@ -37,20 +37,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/button_stroke_white_press_blue"
+                    android:background="@drawable/stl_button_stroke_white_press_blue"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
+                    android:layout_marginEnd="16dp"
                     android:text="@string/back"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/text_levels"
+                    android:id="@+id/countdown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/countdown"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/text_levels"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:text="@string/level"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
@@ -220,7 +229,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgtest" />
+                    android:src="@drawable/level0_imgtest" />
 
                 <ImageView
                     android:id="@+id/img_right"
@@ -230,7 +239,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/imgtest" />
+                    android:src="@drawable/level0_imgtest" />
             </LinearLayout>
 
             <LinearLayout
