@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.google.gms.google-services'
 android {
 
     compileSdkVersion 29
@@ -8,8 +8,8 @@ android {
         applicationId "hell.luc1fer.quiz"
         minSdkVersion 23
         targetSdkVersion 29
-        versionCode 4
-        versionName "1.13.04.2020.0001"
+        versionCode 5
+        versionName "1.22.04.2020.0001"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,12 +34,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation 'com.emredavarci:CircleProgressBar:1.0.8'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.google.android.gms:play-services-ads:19.0.1'
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
     implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
 }

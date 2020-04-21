@@ -170,7 +170,7 @@ public class Array {
 
     final int[] strong4 = {1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0,};
 
-    final int[] images_levels = {
+/*    final int[] images_levels = {
             R.drawable.level3_three_level1,
             R.drawable.level3_three_level2,
             R.drawable.level3_three_level3,
@@ -202,7 +202,90 @@ public class Array {
             R.drawable.level3_three_level8,
             R.drawable.level3_three_level9,
 
+    };*/
+
+
+
+    //массив 5 уровень
+
+
+    final int[] images5 = {
+            R.drawable.level5_51_giraffe51,
+            R.drawable.level5_53_uipett53,
+            R.drawable.level5_56_grizzly56,
+            R.drawable.level5_56_jackal56,
+            R.drawable.level5_64_hyena64,
+            R.drawable.level5_64_kulan64,
+            R.drawable.level5_64_zebra64,
+            R.drawable.level5_65_gazelle65,
+            R.drawable.level5_67_greyfox67,
+            R.drawable.level5_69_borzaya69,
+            R.drawable.level5_69_coyote69,
+            R.drawable.level5_69_onagr69,
+            R.drawable.level5_70_camelbird70,
+            R.drawable.level5_71_kangaroo71,
+            R.drawable.level5_72_blacktalerabbit72,
+            R.drawable.level5_72_hyenadog72,
+            R.drawable.level5_72_vapiti72,
+            R.drawable.level5_80_garna80,
+            R.drawable.level5_80_gnu80,
+            R.drawable.level5_80_leo80,
+            R.drawable.level5_88_horse88,
+            R.drawable.level5_98_antilopavilka98,
+            R.drawable.level5_100_sprigbok100,
+            R.drawable.level5_121_cheetah121,
+
     };
+
+
+    final int[] texts5 = {
+            R.string.lvl5text1,
+            R.string.lvl5text2,
+            R.string.lvl5text3,
+            R.string.lvl5text4,
+            R.string.lvl5text5,
+            R.string.lvl5text6,
+            R.string.lvl5text7,
+            R.string.lvl5text8,
+            R.string.lvl5text9,
+            R.string.lvl5text10,
+            R.string.lvl5text11,
+            R.string.lvl5text12,
+            R.string.lvl5text13,
+            R.string.lvl5text14,
+            R.string.lvl5text15,
+            R.string.lvl5text16,
+            R.string.lvl5text17,
+            R.string.lvl5text18,
+            R.string.lvl5text19,
+            R.string.lvl5text20,
+            R.string.lvl5text21,
+            R.string.lvl5text22,
+            R.string.lvl5text23,
+            R.string.lvl5text24,
+
+    };
+
+    final int[] strong5 = {51, 53, 56, 56, 64, 64, 64, 65, 67, 69, 69, 69, 70, 71, 72, 72, 72, 80, 80, 80, 88, 98, 100, 121,};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     final int[] x = {R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4,
             R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9,

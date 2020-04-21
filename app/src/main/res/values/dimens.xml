@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    !-размеры маленьких экранов портретной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeSmall">14sp</dimen>
+    <dimen name="amPaddingSmall">6dp</dimen>
+    <dimen name="amMarginSmall">40dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightSmall">6dp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="paddingSmall">6dp</dimen>
+    <dimen name="paddingSmall_half">3dp</dimen>
+    <dimen name="dimenLeftRightImgSmall">1dp</dimen>
+    <dimen name="imgHeightSmall">220dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingSmall">6dp</dimen>
+    <dimen name="glPaddingSmall_half">3dp</dimen>
+    <dimen name="glTextSizeSmall">14sp</dimen>
+    <dimen name="glMarginSmall">6dp</dimen>
+    <dimen name="glLevelsSizeSmall">40dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginSmall">10dp</dimen>
+    <dimen name="dXSizeSmall">20dp</dimen>
+    <dimen name="dTextSizeSmall">14sp</dimen>
+    <dimen name="dPaddingSmall">6dp</dimen>
+    <dimen name="dTextSizeButtonSmall">14sp</dimen>
+    <dimen name="dPreviewImgWidthSmall">280dp</dimen>
+    <dimen name="dPreviewImgHeightSmall">120dp</dimen>
+    <dimen name="dStarsHeightSmall">45dp</dimen>
+
+
+    !-размеры маленьких экранов альбомной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeSmall_land">12sp</dimen>
+    <dimen name="amPaddingSmall_land">6dp</dimen>
+    <dimen name="amMarginSmall_land">40dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightSmall_land">4dp</dimen>
+    <dimen name="textSizeSmall_land">12sp</dimen>
+    <dimen name="paddingSmall_land">6dp</dimen>
+    <dimen name="paddingSmall_half_land">2dp</dimen>
+    <dimen name="dimenLeftRightImgSmall_land">1dp</dimen>
+    <dimen name="imgHeightSmall_land">180dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingSmall_land">6dp</dimen>
+    <dimen name="glPaddingSmall_half_land">3dp</dimen>
+    <dimen name="glTextSizeSmall_land">12sp</dimen>
+    <dimen name="glMarginSmall_land">6dp</dimen>
+    <dimen name="glLevelsSizeSmall_land">35dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginSmall_land">10dp</dimen>
+    <dimen name="dXSizeSmall_land">20dp</dimen>
+    <dimen name="dTextSizeSmall_land">12sp</dimen>
+    <dimen name="dPaddingSmall_land">6dp</dimen>
+    <dimen name="dTextSizeButtonSmall_land">12sp</dimen>
+    <dimen name="dPreviewImgWidthSmall_land">280dp</dimen>
+    <dimen name="dPreviewImgHeightSmall_land">120dp</dimen>
+    <dimen name="dStarsHeightSmall_land">35dp</dimen>
+
+
+    !-размеры нормальных экранов портретной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeNormal">20sp</dimen>
+    <dimen name="amPaddingNormal">10dp</dimen>
+    <dimen name="amMarginNormal">40dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightNormal">10dp</dimen>
+    <dimen name="textSizeNormal">20sp</dimen>
+    <dimen name="paddingNormal">10dp</dimen>
+    <dimen name="paddingNormal_half">5dp</dimen>
+    <dimen name="dimenLeftRightImgNormal">2dp</dimen>
+    <dimen name="imgHeightNormal">320dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingNormal">10dp</dimen>
+    <dimen name="glPaddingNormal_half">5dp</dimen>
+    <dimen name="glTextSizeNormal">20sp</dimen>
+    <dimen name="glMarginNormal">10dp</dimen>
+    <dimen name="glLevelsSizeNormal">50dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginNormal">10dp</dimen>
+    <dimen name="dXSizeNormal">30dp</dimen>
+    <dimen name="dTextSizeNormal">20sp</dimen>
+    <dimen name="dPaddingNormal">10dp</dimen>
+    <dimen name="dTextSizeButtonNormal">20sp</dimen>
+    <dimen name="dPreviewImgWidthNormal">500dp</dimen>
+    <dimen name="dPreviewImgHeightNormal">200dp</dimen>
+    <dimen name="dStarsHeightNormal">65dp</dimen>
+
+
+    !-размеры нормальных экранов альбомной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeNormal_land">20sp</dimen>
+    <dimen name="amPaddingNormal_land">10dp</dimen>
+    <dimen name="amMarginNormal_land">80dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightNormal_land">6dp</dimen>
+    <dimen name="textSizeNormal_land">20sp</dimen>
+    <dimen name="paddingNormal_land">10dp</dimen>
+    <dimen name="paddingNormal_half_land">5dp</dimen>
+    <dimen name="dimenLeftRightImgNormal_land">2dp</dimen>
+    <dimen name="imgHeightNormal_land">250dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingNormal_land">10dp</dimen>
+    <dimen name="glPaddingNormal_half_land">5dp</dimen>
+    <dimen name="glTextSizeNormal_land">20sp</dimen>
+    <dimen name="glMarginNormal_land">10dp</dimen>
+    <dimen name="glLevelsSizeNormal_land">50dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginNormal_land">10dp</dimen>
+    <dimen name="dXSizeNormal_land">30dp</dimen>
+    <dimen name="dTextSizeNormal_land">20sp</dimen>
+    <dimen name="dPaddingNormal_land">10dp</dimen>
+    <dimen name="dTextSizeButtonNormal_land">20sp</dimen>
+    <dimen name="dPreviewImgWidthNormal_land">500dp</dimen>
+    <dimen name="dPreviewImgHeightNormal_land">150dp</dimen>
+    <dimen name="dStarsHeightNormal_land">65dp</dimen>
+
+
+    !-размеры больших экранов портретной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeLarge">30sp</dimen>
+    <dimen name="amPaddingLarge">16dp</dimen>
+    <dimen name="amMarginLarge">80dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightLarge">15dp</dimen>
+    <dimen name="textSizeLarge">30sp</dimen>
+    <dimen name="paddingLarge">16dp</dimen>
+    <dimen name="paddingLarge_half">8dp</dimen>
+    <dimen name="dimenLeftRightImgLarge">3dp</dimen>
+    <dimen name="imgHeightLarge">480dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingLarge">16dp</dimen>
+    <dimen name="glPaddingLarge_half">8dp</dimen>
+    <dimen name="glTextSizeLarge">30sp</dimen>
+    <dimen name="glMarginLarge">16dp</dimen>
+    <dimen name="glLevelsSizeLarge">75dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginLarge">15dp</dimen>
+    <dimen name="dXSizeLarge">45dp</dimen>
+    <dimen name="dTextSizeLarge">30sp</dimen>
+    <dimen name="dPaddingLarge">16dp</dimen>
+    <dimen name="dTextSizeButtonLarge">30sp</dimen>
+    <dimen name="dPreviewImgWidthLarge">750dp</dimen>
+    <dimen name="dPreviewImgHeightLarge">450dp</dimen>
+    <dimen name="dStarsHeightLarge">65dp</dimen>
+
+
+    !-размеры больших экранов альбомной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeLarge_land">28sp</dimen>
+    <dimen name="amPaddingLarge_land">16dp</dimen>
+    <dimen name="amMarginLarge_land">80dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightLarge_land">12dp</dimen>
+    <dimen name="textSizeLarge_land">28sp</dimen>
+    <dimen name="paddingLarge_land">16dp</dimen>
+    <dimen name="paddingLarge_half_land">8dp</dimen>
+    <dimen name="dimenLeftRightImgLarge_land">2dp</dimen>
+    <dimen name="imgHeightLarge_land">375dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingLarge_land">16dp</dimen>
+    <dimen name="glPaddingLarge_half_land">8dp</dimen>
+    <dimen name="glTextSizeLarge_land">28sp</dimen>
+    <dimen name="glMarginLarge_land">16dp</dimen>
+    <dimen name="glLevelsSizeLarge_land">70dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginLarge_land">15dp</dimen>
+    <dimen name="dXSizeLarge_land">45dp</dimen>
+    <dimen name="dTextSizeLarge_land">28sp</dimen>
+    <dimen name="dPaddingLarge_land">16dp</dimen>
+    <dimen name="dTextSizeButtonLarge_land">28sp</dimen>
+    <dimen name="dPreviewImgWidthLarge_land">750dp</dimen>
+    <dimen name="dPreviewImgHeightLarge_land">225dp</dimen>
+    <dimen name="dStarsHeightLarge_land">65dp</dimen>
+
+
+    !-размеры огромных экранов портретной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeXLarge">40sp</dimen>
+    <dimen name="amPaddingXLarge">16dp</dimen>
+    <dimen name="amMarginXLarge">80dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightXLarge">20dp</dimen>
+    <dimen name="textSizeXLarge">40sp</dimen>
+    <dimen name="paddingXLarge">16dp</dimen>
+    <dimen name="paddingXLarge_half">8dp</dimen>
+    <dimen name="dimenLeftRightImgXLarge">4dp</dimen>
+    <dimen name="imgHeightXLarge">640dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingXLarge">15dp</dimen>
+    <dimen name="glPaddingXLarge_half">8dp</dimen>
+    <dimen name="glTextSizeXLarge">40sp</dimen>
+    <dimen name="glMarginXLarge">30dp</dimen>
+    <dimen name="glLevelsSizeXLarge">100dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginXLarge">10dp</dimen>
+    <dimen name="dXSizeXLarge">60dp</dimen>
+    <dimen name="dTextSizeXLarge">40sp</dimen>
+    <dimen name="dPaddingXLarge">16dp</dimen>
+    <dimen name="dTextSizeButtonXLarge">40sp</dimen>
+    <dimen name="dPreviewImgWidthXLarge">1000dp</dimen>
+    <dimen name="dPreviewImgHeightXLarge">500dp</dimen>
+    <dimen name="dStarsHeightXLarge">65dp</dimen>
+
+
+    !-размеры огромных экранов альбомной ориентации-!
+    !-Начальный экран-!
+    <dimen name="amTextSizeXLarge_land">30sp</dimen>
+    <dimen name="amPaddingXLarge_land">16dp</dimen>
+    <dimen name="amMarginXLarge_land">160dp</dimen>
+
+    !-Экран уровня-!
+    <dimen name="DotsHeightXLarge_land">16dp</dimen>
+    <dimen name="textSizeXLarge_land">30sp</dimen>
+    <dimen name="paddingXLarge_land">16dp</dimen>
+    <dimen name="paddingXLarge_half_land">8dp</dimen>
+    <dimen name="dimenLeftRightImgXLarge_land">4dp</dimen>
+    <dimen name="imgHeightXLarge_land">500dp</dimen>
+
+    !-Экран выбор уровня-!
+    <dimen name="glPaddingXLarge_land">16dp</dimen>
+    <dimen name="glPaddingXLarge_half_land">8dp</dimen>
+    <dimen name="glTextSizeXLarge_land">30sp</dimen>
+    <dimen name="glMarginXLarge_land">10dp</dimen>
+    <dimen name="glLevelsSizeXLarge_land">70dp</dimen>
+
+    !-Диалоговое окно в начале уровня-!
+    <dimen name="dMarginXLarge_land">10dp</dimen>
+    <dimen name="dXSizeXLarge_land">45dp</dimen>
+    <dimen name="dTextSizeXLarge_land">30sp</dimen>
+    <dimen name="dPaddingXLarge_land">16dp</dimen>
+    <dimen name="dTextSizeButtonXLarge_land">30sp</dimen>
+    <dimen name="dPreviewImgWidthXLarge_land">500dp</dimen>
+    <dimen name="dPreviewImgHeightXLarge_land">150dp</dimen>
+    <dimen name="dStarsHeightXLarge_land">65dp</dimen>
+
+
+</resources>

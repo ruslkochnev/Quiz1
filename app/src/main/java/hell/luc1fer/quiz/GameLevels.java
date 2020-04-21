@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,7 +61,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         //in-app purchase
 
         if (!BillingProcessor.isIabServiceAvailable(this)) {
-            Toast.makeText(this, "In-app billing service is unavailable.", Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "In-app billing service is unavailable.", Toast.LENGTH_LONG).show();
         }
 
         bp = new BillingProcessor(this, getString(R.string.license), this);
@@ -75,7 +74,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //возвращаемся в главное меню
-        Button button_back = findViewById(R.id.button_back);
+        TextView button_back = findViewById(R.id.button_back);
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +91,7 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
         for (int i = 1; i < level; i++) {
             TextView tv = findViewById(array.x[i]);
             tv.setText("" + (i + 1));
-            tv.setBackgroundResource(R.drawable.stl_button_gamelevels);
+            tv.setBackgroundResource(R.drawable.stl_button_game_levels);
         }
 
 
@@ -114,11 +113,10 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                 Intent level1 = new Intent(GameLevels.this, Levels.class);
                 level1.putExtra("text_levels", getString(R.string.level1)); //задаем название уровня и создаем ключ "text_levels"
                 level1.putExtra("text_color", getColor(R.color.white));//задаем цвет текста и создаем ключ "text_color"
-                level1.putExtra("background", R.drawable.level1_level1);//задаем фон уровня и создаем ключ "background"
-                level1.putExtra("previewImg", R.drawable.level1_previewimgone);//задаем картинку диалогового окна и создаем ключ "previewImg"
-                level1.putExtra("dialogFon", R.drawable.level1_previewbackgroundone);//задаем фон диалогового окна и создаем ключ "dialogFon"
+                level1.putExtra("background", R.drawable.level_type1_blue_background);//задаем фон уровня и создаем ключ "background"
+                level1.putExtra("previewImg", R.drawable.level1_preview_img_one);//задаем картинку диалогового окна и создаем ключ "previewImg"
+                level1.putExtra("dialogFon", R.drawable.stl_preview_background_type1_blue);//задаем фон диалогового окна и создаем ключ "dialogFon"
                 level1.putExtra("levelDescription", getString(R.string.levelone));//задаем описание уровня и создаем ключ "levelDescription"
-                level1.putExtra("dialogFonEnd", R.drawable.level1_previewbackgroundone);//задаем фон даилогового окна в конце уровня и создаем ключ "dialogFonEnd"
                 level1.putExtra("levelDescriptionEnd", getString(R.string.leveloneEnd));//задаем текст диалогового окна в конце уровня и создаем ключ "levelDescriptionEnd"
                 level1.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);//задаем стиль кнопки "назад" и создаем ключ "btn_back_style"
                 level1.putExtra("btn_back_text_color", getColor(R.color.white));//задаем цвет текста кнопки "назад" и создаем ключ "btn_back_text_color"
@@ -126,9 +124,12 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                 level1.putExtra("img", array.images1);//задаем массив картинок и создаем ключ "img"
                 level1.putExtra("text", array.texts1);//задаем массив текста подписей и создаем ключ "text"
                 level1.putExtra("L", array.strong1);//задаем массив сравнений и создаем ключ "L"
+                level1.putExtra("goodMax", 15);//время для 3*
+                level1.putExtra("badMin", 25);//время для 1*
                 level1.putExtra("preferencesDefault", 1); //присваиваем в настройках уровень по умолчанию создаем ключ "preferencesDefault"
                 level1.putExtra("preferencesLevel", 1); //сравниваем с текущим уровнем и создаем ключ "preferencesLevel"
                 level1.putExtra("preferencesValue", 2); //присваимваем значение [текущий уровень + 1] и создаем ключ "preferencesValue"
+                level1.putExtra("adTrue", false); //отключаем рекламу на первых 4 уровнях
                 startActivity(level1);
                 finish();
                 break;
@@ -138,11 +139,10 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level2 = new Intent(GameLevels.this, Levels.class);
                         level2.putExtra("text_levels", getString(R.string.level2));
                         level2.putExtra("text_color", getColor(R.color.white));
-                        level2.putExtra("background", R.drawable.level2_level2);
+                        level2.putExtra("background", R.drawable.level_type1_blue_background);
                         level2.putExtra("previewImg", R.drawable.level2_previewimgtwo);
-                        level2.putExtra("dialogFon", R.drawable.level2_previewbackgroundtwo);
+                        level2.putExtra("dialogFon", R.drawable.stl_preview_background_type1_blue);
                         level2.putExtra("levelDescription", getString(R.string.leveltwo));
-                        level2.putExtra("dialogFonEnd", R.drawable.level2_previewbackgroundtwo);
                         level2.putExtra("levelDescriptionEnd", getString(R.string.leveltwoEnd));
                         level2.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);
                         level2.putExtra("btn_back_text_color", getColor(R.color.white));
@@ -150,9 +150,12 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         level2.putExtra("img", array.images2);
                         level2.putExtra("text", array.texts2);
                         level2.putExtra("L", array.strong2);
+                        level2.putExtra("goodMax", 15);//время для 3*
+                        level2.putExtra("badMin", 25);//время для 1*
                         level2.putExtra("preferencesDefault", 1); //присваиваем в настройках уровень по умолчанию
                         level2.putExtra("preferencesLevel", 2); //сравниваем с текущим уровнем
                         level2.putExtra("preferencesValue", 3); //присваимваем значение [текущий уровень + 1]
+                        level2.putExtra("adTrue", false); //отключаем рекламу на первых 4 уровнях
                         startActivity(level2);
                         finish();
                     } else {
@@ -168,11 +171,10 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level3 = new Intent(GameLevels.this, Levels.class);
                         level3.putExtra("text_levels", getString(R.string.level3));
                         level3.putExtra("text_color", getColor(R.color.black95));
-                        level3.putExtra("background", R.drawable.level3_level3);
+                        level3.putExtra("background", R.drawable.level_type2_sun_grass_background);
                         level3.putExtra("previewImg", R.drawable.level3_previewimg3);
-                        level3.putExtra("dialogFon", R.drawable.level3_previewbackground3);
+                        level3.putExtra("dialogFon", R.drawable.stl_previewbackground_type2_sand);
                         level3.putExtra("levelDescription", getString(R.string.levelthree));
-                        level3.putExtra("dialogFonEnd", R.drawable.level3_previewbackground3);
                         level3.putExtra("levelDescriptionEnd", getString(R.string.levelthreeEnd));
                         level3.putExtra("btn_back_style", R.drawable.stl_button_stroke_black95_press_white);
                         level3.putExtra("btn_back_text_color", getColor(R.color.black95));
@@ -180,9 +182,12 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         level3.putExtra("img", array.images3);
                         level3.putExtra("text", array.texts3);
                         level3.putExtra("L", array.strong3);
+                        level3.putExtra("goodMax", 20);//время для 3*
+                        level3.putExtra("badMin", 30);//время для 1*
                         level3.putExtra("preferencesDefault", 1); //присваиваем в настройках уровень по умолчанию
                         level3.putExtra("preferencesLevel", 3); //текущий уровень
                         level3.putExtra("preferencesValue", 4); //присваимваем значение [текущий уровень + 1]
+                        level3.putExtra("adTrue", false); //отключаем рекламу на первых 4 уровнях
                         startActivity(level3);
                         finish();
 
@@ -199,23 +204,23 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                         Intent level4 = new Intent(GameLevels.this, Levels.class);
                         level4.putExtra("text_levels", getString(R.string.level4));
                         level4.putExtra("text_color", getColor(R.color.white));
-                        level4.putExtra("background", R.drawable.level4_level4);
+                        level4.putExtra("background", R.drawable.level_type1_blue_background);
                         level4.putExtra("previewImg", R.drawable.level4_previewimg4);
-                        level4.putExtra("dialogFon", R.drawable.level4_previewbackground4);
+                        level4.putExtra("dialogFon", R.drawable.stl_preview_background_type1_blue);
                         level4.putExtra("levelDescription", getString(R.string.levelfour));
-                        level4.putExtra("dialogFonEnd", R.drawable.level4_previewbackground4);
                         level4.putExtra("levelDescriptionEnd", getString(R.string.levelfourEnd));
                         level4.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);
                         level4.putExtra("btn_back_text_color", getColor(R.color.white));
-                        level4.putExtra("arrayElementsCount", 10);
+                        level4.putExtra("arrayElementsCount", 20);
                         level4.putExtra("img", array.images4);
                         level4.putExtra("text", array.texts4);
                         level4.putExtra("L", array.strong4);
+                        level4.putExtra("goodMax", 15);//время для 3*
+                        level4.putExtra("badMin", 25);//время для 1*
                         level4.putExtra("preferencesDefault", 1); //присваиваем в настройках уровень по умолчанию
                         level4.putExtra("preferencesLevel", 4); //сравниваем с текущим уровнем
-
-                        //!!!!!!!!!!!!!!!!!!!!! ИЗМЕНИТЬ ЗНАЧЕНИЕ С 4 НА 5 ПРИ ДОБАВЛЕНИИ 5 УРОВНЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                        level4.putExtra("preferencesValue", 4); //присваимваем значение [текущий уровень + 1]
+                        level4.putExtra("preferencesValue", 5); //присваимваем значение [текущий уровень + 1]
+                        level4.putExtra("adTrue", false); //отключаем рекламу на первых 4 уровнях
                         startActivity(level4);
                         finish();
                     } else {
@@ -226,8 +231,37 @@ public class GameLevels extends AppCompatActivity implements BillingProcessor.IB
                 }
                 break;
             case R.id.textView5://5 уровень
-                notAvailable = Toast.makeText(getBaseContext(), R.string.level_not_available, Toast.LENGTH_SHORT);
-                notAvailable.show();
+                try {
+                    if (level >= 5) {
+                        Intent level5 = new Intent(GameLevels.this, Levels.class);
+                        level5.putExtra("text_levels", getString(R.string.level5));
+                        level5.putExtra("text_color", getColor(R.color.white));
+                        level5.putExtra("background", R.drawable.level_type1_blue_background);
+                        level5.putExtra("previewImg", R.drawable.level5_previewimg5);
+                        level5.putExtra("dialogFon", R.drawable.stl_preview_background_type1_blue);
+                        level5.putExtra("levelDescription", getString(R.string.levelfive));
+                        level5.putExtra("levelDescriptionEnd", getString(R.string.levelfiveEnd));
+                        level5.putExtra("btn_back_style", R.drawable.stl_button_stroke_white_press_blue);
+                        level5.putExtra("btn_back_text_color", getColor(R.color.white));
+                        level5.putExtra("arrayElementsCount", 24);
+                        level5.putExtra("img", array.images5);
+                        level5.putExtra("text", array.texts5);
+                        level5.putExtra("L", array.strong5);
+                        level5.putExtra("goodMax", 45);//время для 3*
+                        level5.putExtra("badMin", 75);//время для 1*
+                        level5.putExtra("preferencesDefault", 1); //присваиваем в настройках уровень по умолчанию
+                        level5.putExtra("preferencesLevel", 5); //сравниваем с текущим уровнем
+                        //!!!!!!!!!!!!!!!!!!!!! ИЗМЕНИТЬ ЗНАЧЕНИЕ С 5 НА 6 ПРИ ДОБАВЛЕНИИ 6 УРОВНЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        level5.putExtra("preferencesValue", 5); //присваимваем значение [текущий уровень + 1]
+                        level5.putExtra("adTrue", true); //отключаем рекламу на первых 4 уровнях
+                        startActivity(level5);
+                        finish();
+                    } else {
+                        continueToast = Toast.makeText(getBaseContext(), R.string.toastMsgNotPassed, Toast.LENGTH_SHORT);
+                        continueToast.show();
+                    }
+                } catch (Exception e) {
+                }
                 break;
             case R.id.textView6://6 уровень
                 notAvailable = Toast.makeText(getBaseContext(), R.string.level_not_available, Toast.LENGTH_SHORT);

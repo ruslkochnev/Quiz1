@@ -7,7 +7,14 @@
     <string name="level2">Level: 2</string>
     <string name="level3">Level: 3</string>
     <string name="level4">Level: 4</string>
-    <string name="textcontinue">Continue</string>
+    <string name="level5">Level: 5</string>
+    <string name="level6">Level: 6</string>
+    <string name="level7">Level: 7</string>
+    <string name="level8">Level: 8</string>
+    <string name="level9">Level: 9</string>
+    <string name="level10">Level: 10</string>
+    <string name="level11">Level: 11</string>
+    <string name="textContinue">Continue</string>
     <string name="x">X</string>
     <string name="_1">1</string>
     <string name="toastMsgExit">Click again to exit</string>
@@ -22,5 +29,16 @@
     <string name="sup1">0.99 $</string>
     <string name="sup2">1.49 $</string>
     <string name="sup3">6.99 $</string>
-    <string name="countdown">"Left: "</string>
+    <string name="zero">00:00</string>
+    <string name="good">Good!</string>
+    <string name="passably">Passably.</string>
+    <string name="bad">Bad...</string>
+    <string name="background" translatable="false">background</string>
+    <string name="img_test" translatable="false">img_test</string>
+    <string name="text_left" translatable="false">Text Left</string>
+    <string name="text_right" translatable="false">Text Right</string>
+    <string name="previewimg" translatable="false">preview</string>
+    <string name="starimg" translatable="false">star</string>
+    <string name="imgboy" translatable="false">boy</string>
+    <string name="mainback" translatable="false">main</string>
 </resources>

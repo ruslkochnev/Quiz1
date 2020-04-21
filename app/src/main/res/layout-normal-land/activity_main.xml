@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/mainback"
+        android:scaleType="centerCrop"
+        android:src="@drawable/level_type0_light_blue_background" />
+
+    <ImageView
+        android:id="@+id/main_img_boy"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/amMarginNormal_land"
+        android:contentDescription="@string/imgboy"
+        android:src="@drawable/level0_main_img_boy" />
+
+
+
+        <TextView
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
+            android:paddingStart="@dimen/amPaddingNormal_land"
+            android:paddingEnd="@dimen/amPaddingNormal_land"
+            android:layout_marginEnd="@dimen/amMarginNormal_land"
+            android:text="@string/start"
+            android:textAllCaps="true"
+            android:textColor="@color/black95"
+            android:textSize="@dimen/amTextSizeNormal_land"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

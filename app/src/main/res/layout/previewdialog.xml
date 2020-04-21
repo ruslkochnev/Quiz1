@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dialogfon"
+    android:id="@+id/dialogFon"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="10dp"
-    android:background="@drawable/level1_previewbackgroundone"
+    android:layout_margin="@dimen/dMarginNormal"
+    android:background="@drawable/stl_preview_background_type1_blue"
     android:orientation="vertical"
     android:scaleType="centerCrop">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="@dimen/dPaddingNormal">
 
         <TextView
-            android:id="@+id/btnclose"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/dXSizeNormal"
+            android:layout_height="@dimen/dXSizeNormal"
             android:layout_gravity="start"
             android:background="@drawable/stl_button_stroke_black95_press_white"
             android:gravity="center"
-            android:text="&#60;"
-            android:textStyle="bold" />
+            android:text="@string/x"
+            android:textSize="@dimen/dTextSizeNormal"/>
 
         <ImageView
-            android:id="@+id/previewimg"
+            android:id="@+id/previewImg"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="60"
-            android:src="@drawable/level1_previewimgone" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dMarginNormal"
+            android:layout_below="@id/btnClose"
+            android:src="@drawable/level1_preview_img_one"
+            android:contentDescription="@string/previewimg" />
 
         <TextView
-            android:id="@+id/textdescription"
+            android:id="@+id/textDescription"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/previewImg"
+            android:layout_marginTop="@dimen/dMarginNormal"
             android:text="@string/levelone"
             android:textColor="@color/black95"
-            android:textSize="24sp" />
+            android:textSize="@dimen/dTextSizeNormal" />
 
-        <Button
-            android:id="@+id/btncontiue"
+        <TextView
+            android:id="@+id/btnContinue"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDescription"
             android:background="@drawable/stl_button_stroke_black95_press_white"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="@string/textcontinue"
+            android:paddingLeft="@dimen/dPaddingNormal"
+            android:paddingRight="@dimen/dPaddingNormal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dMarginNormal"
+            android:text="@string/textContinue"
             android:textAllCaps="true"
             android:textColor="@color/black95"
-            android:textSize="24sp" />
+            android:textSize="@dimen/dTextSizeButtonNormal"/>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

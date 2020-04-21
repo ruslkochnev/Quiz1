@@ -26,27 +26,27 @@
 
 
 
-    <string name="lvl3text1">A rabbit</string>
-    <string name="lvl3text2">A cat</string>
-    <string name="lvl3text3">A dog</string>
-    <string name="lvl3text4">A cat</string>
-    <string name="lvl3text5">A fox</string>
-    <string name="lvl3text6">A rabbit</string>
-    <string name="lvl3text7">A cat</string>
-    <string name="lvl3text8">A ferret</string>
-    <string name="lvl3text9">A hedgehog</string>
-    <string name="lvl3text10">A lemur</string>
-    <string name="lvl3text11">A fur-seal</string>
-    <string name="lvl3text12">A lemur</string>
-    <string name="lvl3text13">A ram</string>
-    <string name="lvl3text14">A raccoon</string>
-    <string name="lvl3text15">A dog</string>
-    <string name="lvl3text16">A fox</string>
-    <string name="lvl3text17">A fox</string>
-    <string name="lvl3text18">A tiger</string>
-    <string name="lvl3text19">A dog</string>
-    <string name="lvl3text20">A lemur</string>
-    <string name="lvl3text21">A bear</string>
+    <string name="lvl3text1">Rabbit</string>
+    <string name="lvl3text2">Cat</string>
+    <string name="lvl3text3">Dog</string>
+    <string name="lvl3text4">Cat</string>
+    <string name="lvl3text5">Fox</string>
+    <string name="lvl3text6">Rabbit</string>
+    <string name="lvl3text7">Cat</string>
+    <string name="lvl3text8">Ferret</string>
+    <string name="lvl3text9">Hedgehog</string>
+    <string name="lvl3text10">Lemur</string>
+    <string name="lvl3text11">Fur-seal</string>
+    <string name="lvl3text12">Lemur</string>
+    <string name="lvl3text13">Ram</string>
+    <string name="lvl3text14">Raccoon</string>
+    <string name="lvl3text15">Dog</string>
+    <string name="lvl3text16">Fox</string>
+    <string name="lvl3text17">Fox</string>
+    <string name="lvl3text18">Tiger</string>
+    <string name="lvl3text19">Dog</string>
+    <string name="lvl3text20">Lemur</string>
+    <string name="lvl3text21">Bear</string>
 
 
     <string name="lvl4text1">An orange</string>
@@ -70,5 +70,30 @@
     <string name="lvl4text19">A burger</string>
     <string name="lvl4text20">A box</string>
 
+
+    <string name="lvl5text1">Giraffe</string>
+    <string name="lvl5text2">Whippet</string>
+    <string name="lvl5text3">Grizzly</string>
+    <string name="lvl5text4">Jackal</string>
+    <string name="lvl5text5">Hyena</string>
+    <string name="lvl5text6">Mongolian Kulan</string>
+    <string name="lvl5text7">Zebra</string>
+    <string name="lvl5text8">Thomsom\'s Gazelle</string>
+    <string name="lvl5text9">Grey fox</string>
+    <string name="lvl5text10">Greyhound</string>
+    <string name="lvl5text11">Coyote</string>
+    <string name="lvl5text12">Onager</string>
+    <string name="lvl5text13">Ostrich</string>
+    <string name="lvl5text14">Kangaroo</string>
+    <string name="lvl5text15">Black-tailed hare</string>
+    <string name="lvl5text16">Hyena dog</string>
+    <string name="lvl5text17">Wapiti</string>
+    <string name="lvl5text18">Garn</string>
+    <string name="lvl5text19">Antelope Gnu</string>
+    <string name="lvl5text20">Lion</string>
+    <string name="lvl5text21">Racehorse</string>
+    <string name="lvl5text22">Pronghorn antelope</string>
+    <string name="lvl5text23">Springbok</string>
+    <string name="lvl5text24">Cheetah</string>
 
 </resources>

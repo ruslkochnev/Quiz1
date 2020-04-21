@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogFon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dMarginLarge_land"
+    android:background="@drawable/stl_preview_background_type1_blue"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dPaddingLarge_land">
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/dXSizeLarge_land"
+            android:layout_height="@dimen/dXSizeLarge_land"
+            android:layout_gravity="start"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
+            android:gravity="center"
+            android:text="@string/x"
+            android:textSize="@dimen/dTextSizeLarge_land" />
+
+        <ImageView
+            android:id="@+id/previewImg"
+            android:layout_width="@dimen/dPreviewImgWidthLarge_land"
+            android:layout_height="@dimen/dPreviewImgHeightLarge_land"
+            android:layout_marginTop="@dimen/dMarginLarge_land"
+            android:layout_below="@id/btnClose"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/level1_preview_img_one"
+            android:contentDescription="@string/previewimg" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/previewImg"
+            android:layout_marginTop="@dimen/dMarginLarge_land"
+            android:text="@string/levelone"
+            android:textColor="@color/black95"
+            android:textSize="@dimen/dTextSizeLarge_land" />
+
+        <TextView
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDescription"
+            android:background="@drawable/stl_button_stroke_black95_press_white"
+            android:paddingLeft="@dimen/dPaddingLarge_land"
+            android:paddingRight="@dimen/dPaddingLarge_land"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dMarginLarge_land"
+            android:text="@string/textContinue"
+            android:textAllCaps="true"
+            android:textColor="@color/black95"
+            android:textSize="@dimen/dTextSizeButtonLarge_land"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

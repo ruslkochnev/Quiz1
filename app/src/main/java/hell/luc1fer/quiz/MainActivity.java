@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
@@ -27,17 +28,24 @@ public class MainActivity extends AppCompatActivity {
     HomeWatcher mHomeWatcher;
     private long backPressedTime;
     private Toast backToast;
-    private static InterstitialAd mInterstitialAd;
+    private boolean mIsBound = false;
+    private MusicService mServ;
+    private ServiceConnection Scon = new ServiceConnection() {
 
+        public void onServiceConnected(ComponentName name, IBinder
+                binder) {
+            mServ = ((MusicService.ServiceBinder) binder).getService();
+        }
+
+        public void onServiceDisconnected(ComponentName name) {
+            mServ = null;
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-
 
 
         //music service
@@ -67,21 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
         //межстраничное объявление
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-        mInterstitialAd = new InterstitialAd(this);
-        // test ad
-        //mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        mInterstitialAd.setAdUnitId(getString(R.string.ad_id));
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
 
         //переход к выбору уровня
-        Button buttonStart = findViewById(R.id.buttonStart);
+        TextView buttonStart = findViewById(R.id.buttonStart);
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,37 +92,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
-
-    //системная кнопка назад начало
-    public static void showInterstitial() {
-        // Show the ad if it's ready. Otherwise toast and restart the game.
-        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-
-        } else {
-
-        }
-    }
-
-
-    private boolean mIsBound = false;
-    private MusicService mServ;
-    private ServiceConnection Scon = new ServiceConnection() {
-
-        public void onServiceConnected(ComponentName name, IBinder
-                binder) {
-            mServ = ((MusicService.ServiceBinder) binder).getService();
-        }
-
-        public void onServiceDisconnected(ComponentName name) {
-            mServ = null;
-        }
-    };
 
     void doBindService() {
         bindService(new Intent(this, MusicService.class),
@@ -186,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
 
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             backToast.cancel();
